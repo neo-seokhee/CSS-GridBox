@@ -1,0 +1,91 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
+
+body {
+  background-color: #dde1d4;
+  color: #dde1d4;
+  padding: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 80%;
+  height: 80vh;
+  margin: 50px auto 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template:
+    'big1 big1 big2 big2'
+    'big1 big1 big2 big2'
+    'big3 big3 small1 small2'
+    'big3 big3 small3 small4';
+}
+
+.box_big1 {
+  background-color: rgb(220, 231, 223);
+  color: rgb(226, 83, 41);
+  grid-area: big1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box_big2 {
+  background-color: rgb(69, 135, 107);
+  grid-area: big2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box_big3 {
+  background-color: rgb(226, 83, 41);
+  grid-area: big3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box_small1 {
+  background-color: rgb(236, 174, 196);
+  color: rgb(226, 83, 41);
+  grid-area: small1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box_small2 {
+  background-color: rgb(94, 97, 164);
+  grid-area: small2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box_small3 {
+  background-color: rgb(246, 193, 77);
+  color: rgb(226, 83, 41);
+  grid-area: small3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box_small4 {
+  background-color: rgb(233, 123, 120);
+  grid-area: small4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 60px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 600;
+}
